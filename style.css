@@ -1,0 +1,41 @@
+/* Define os estilos básicos do corpo da página */
+body {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Faz com que o body ocupe 100% da altura da tela */
+    background-color: white; /* Define o fundo branco */
+    margin: 0; /* Remove as margens padrão */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estiliza a div que contém o botão */
+.container {
+    text-align: center; /* Centraliza os elementos filhos */
+}
+
+/* Estiliza o botão */
+button {
+    padding: 15px 30px; /* Adiciona espaçamento interno */
+    font-size: 18px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    border: none; /* Remove as bordas */
+    border-radius: 5px; /* Arredonda as bordas */
+    background-color: #5c1a96; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    transition: transform 0.3s, background-color 0.3s; /* Adiciona uma transição suave para transformações e cor de fundo */
+}
+
+/* Estiliza o botão quando o mouse passa por cima */
+button:hover {
+    transform: scale(1.1); /* Aumenta o botão ligeiramente */
+    background-color: #706c6c; /* Muda a cor de fundo */
+}
+
+
+/* Estiliza os círculos criados dinamicamente pelo JavaScript */
+.circle {
+    border-radius: 50%; /* Garante que o elemento tenha formato circular */
+    position: absolute; /* Permite a movimentação livre dos elementos */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Aplica transição suave para sumir e aumentar */
+}
